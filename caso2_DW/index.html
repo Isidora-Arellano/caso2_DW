@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Centro Médico</title>
+    <link rel="stylesheet" href="horas.css">
+</head>
+<body>
+    <header>
+        <h1>Centro Médico Galenos</h1>
+        <p>Sistema de obtención de horas</p>
+    </header>
+    
+    <main>
+        <h2>Seleccione una hora disponible</h2>
+        <div class="horarios" id="listaHoras">
+        </div>
+
+        <form id="formAgendar">
+            <h2>Agendar Hora</h2>
+            <label for="nombre">Nombre del paciente:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="especialidad">Especialidad:</label>
+            <select id="especialidad" name="especialidad" required>
+                <option value="">Seleccione</option>
+                <option value="medicina_general">Medicina General</option>
+                <option value="kinesiologia">Kinesiología</option>
+                <option value="oftalmologia">Oftalmología</option>
+            </select>
+
+            <label for="horaSeleccionada">Hora Seleccionada:</label>
+            <input type="text" id="horaSeleccionada" name="horaSeleccionada" readonly required>
+
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
